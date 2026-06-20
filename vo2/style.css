@@ -11,9 +11,12 @@ h1 {
 }
 
 #pg {
+    border: 30;
     background-color: green;
     color: white;
     text-align: center;
+    margin: 40;
+    padding: 20;
 }
 
 .bg-red-h2 {
