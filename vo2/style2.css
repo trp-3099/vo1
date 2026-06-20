@@ -1,41 +1,5 @@
-/* h1 {
-    background-color: green;
-    color: white;
-    text-align: center;
-}
-
-p {
-    background-color: brown;
-}
-
-body {
-    background-color: black;
-} */
-
-/* 
-selector{
-    property:value;
-}
-*/
-
-
-.bg-red-h1 {
-    background-color: red;
-    color: white;
-    text-align: center;
-    /* padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 50px;
-    padding-bottom: 50px; */
-
-    padding: 50px;
-    border: 5px solid black;
-    border-radius: 50px;
-    border-style: dashed;
-
-
-    margin: 50px;
-    /* padding: 20px 50px 60px 200px; */
+margin: 50px;
+/* padding: 20px 50px 60px 200px; */
 
 
 
@@ -46,20 +10,40 @@ selector{
 }
 
 .bg-blue-h1 {
-    background-color: blue;
-    color: white;
-    font-family: fantasy;
-    font-size: small;
-    text-align: center;
-    letter-spacing: 5ch;
-    text-decoration: underline dashed;
-}
+    @@ -62, 4+55, 36 @@ selector {
+        * {
+            margin: 0;
+            padding: 0;
+        }
 
-#pg-background {
-    background-color: blueviolet;
-}
 
-* {
-    margin: 0;
-    padding: 0;
-}
+        body {
+            background-image: url('../img/background-image.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+        }
+
+        .pg02-background {
+            background-color: aquamarine;
+            margin: 20px;
+            padding: 10px;
+        }
+
+
+        #box01 {
+            width: 50px;
+            height: 50px;
+            background-color: brown;
+            position: relative;
+            top: 20px;
+            left: 70px;
+        }
+
+        #box02 {
+            width: 100px;
+            height: 100px;
+            margin-top: 50px;
+            background-color: blue;
+        }
