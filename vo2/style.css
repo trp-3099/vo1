@@ -3,3 +3,27 @@ h2 {
     color: white;
     text-align: center;
 }
+
+h1 {
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+
+#pg {
+    background-color: green;
+    color: white;
+    text-align: center;
+}
+
+.bg-red-h2 {
+    background-color: purple;
+    color: white;
+    text-align: center
+}
+
+* {
+    background-color: black;
+    margin: auto;
+    padding: 0%;
+}
