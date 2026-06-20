@@ -1,0 +1,65 @@
+/* h1 {
+    background-color: green;
+    color: white;
+    text-align: center;
+}
+
+p {
+    background-color: brown;
+}
+
+body {
+    background-color: black;
+} */
+
+/* 
+selector{
+    property:value;
+}
+*/
+
+
+.bg-red-h1 {
+    background-color: red;
+    color: white;
+    text-align: center;
+    /* padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px; */
+
+    padding: 50px;
+    border: 5px solid black;
+    border-radius: 50px;
+    border-style: dashed;
+
+
+    margin: 50px;
+    /* padding: 20px 50px 60px 200px; */
+
+
+
+
+
+
+
+}
+
+.bg-blue-h1 {
+    background-color: blue;
+    color: white;
+    font-family: fantasy;
+    font-size: small;
+    text-align: center;
+    letter-spacing: 5ch;
+    text-decoration: underline dashed;
+}
+
+#pg-background {
+    background-color: blueviolet;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
