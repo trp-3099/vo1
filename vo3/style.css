@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.hero {
+    height: 90vh;
+    background: url('https://images.unsplash.com/photo-1446776811953-b23d57bd21aa') center/cover no-repeat;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+footer {
+    margin-top: 20px;
+}
