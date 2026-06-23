@@ -17,6 +17,22 @@ body {
     font-size: 1.2rem;
 }
 
+img {
+    transition: 0.4s;
+}
+
+img:hover {
+    transform: scale(1.03);
+}
+
+h2 {
+    font-weight: bold;
+}
+
+p {
+    color: #555;
+}
+
 footer {
     margin-top: 20px;
 }
