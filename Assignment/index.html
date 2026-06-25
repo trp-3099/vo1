@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML Fundamentals Reference Website">
+    <title>HTML Fundamentals Reference Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>HTML Fundamentals Reference Website</h1>
+        <nav>
+            <a href="#internet">Internet</a>
+            <a href="#services">Services</a>
+            <a href="#browser">Browsers</a>
+            <a href="#dns">DNS</a>
+            <a href="#tags">HTML Tags</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="internet">
+            <h2>What is the Internet?</h2>
+            <p>The Internet is a global network of interconnected computers or networks.</p>
+        </section>
+
+        <section>
+            <h2>How the Internet Works</h2>
+            <ol>
+                <li><strong>User enters a URL:</strong> A user types a web address (URL) into their browser's address
+                    bar.</li>
+                <li><strong>DNS translation:</strong> The browser contacts a DNS server to translate the domain name
+                    into an
+                    IP address that identifies the web server.</li>
+                <li><strong>Browser sends request:</strong> The browser sends an HTTP/HTTPS request to the server at
+                    that IP address, asking for the webpage.</li>
+                <li><strong>Server processes request:</strong> The web server receives the request and retrieves the
+                    requested resources.</li>
+                <li><strong>Server sends response:</strong> The server sends the webpage data back to the browser via
+                    HTTP/HTTPS with a related code.</li>
+                <li><strong>Browser renders page:</strong> The browser receives the data and renders and display the
+                    webpage.</li>
+            </ol>
+        </section>
+
+        <section id="services">
+            <h2>Main Internet Services</h2>
+            <ul>
+                <li>World Wide Web</li>
+                <li>File Transfer</li>
+                <li>video conferencing</li>
+                <li>Cloud Storage and Backup</li>
+                <li>email and Messaging Services</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Daily Life Usage</h2>
+            <p>Communication, education, entertainment, commerce, banking and government services.</p>
+        </section>
+
+        <section id="browser">
+            <h2>Role of Web Browsers</h2>
+            <p>Browsers and render HTML, CSS and JavaScript files.</p>
+        </section>
+
+        <section id="dns">
+            <h2>What is DNS?</h2>
+            <p>DNS translates domain names into IP addresses thatb are used to locate web servers.</p>
+        </section>
+
+        <section id="tags">
+            <h2>HTML Tags Reference</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tag</th>
+                        <th>Purpose</th>
+                        <th>When to Use</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>&lt;html&gt;</td>
+                        <td>Root element that contains all HTML content on the page.</td>
+                        <td>Use once per document to add all HTML markup.</td>
+                        <td><code>&lt;html&gt;&lt;/html&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;head&gt;</td>
+                        <td>Container for page metadata, title, links, and scripts.</td>
+                        <td>Use inside &lt;html&gt; to define document metadata.</td>
+                        <td><code>&lt;head&gt;&lt;/head&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;title&gt;</td>
+                        <td>Defines the page title shown in the browser tab.</td>
+                        <td>Use inside &lt;head&gt; to set the document title.</td>
+                        <td><code>&lt;title&gt;&lt;/title&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;meta&gt;</td>
+                        <td>Provides metadata about the page such as charset or description.</td>
+                        <td>Use inside &lt;head&gt; for page settings and SEO information.</td>
+                        <td><code>&lt;meta&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;link&gt;</td>
+                        <td>Links external resources like stylesheets and icons.</td>
+                        <td>Use inside &lt;head&gt; to attach CSS or favicons.</td>
+                        <td><code>&lt;link&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;style&gt;</td>
+                        <td>Contains internal CSS rules for styling the page.</td>
+                        <td>Use inside &lt;head&gt; or body for embedded styles.</td>
+                        <td><code>&lt;style&gt;&lt;/style&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;body&gt;</td>
+                        <td>Holds all visible content that appears in the browser.</td>
+                        <td>Use once per document to wrap page content.</td>
+                        <td><code>&lt;body&gt;&lt;/body&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;header&gt;</td>
+                        <td>Defines introductory content or site header area.</td>
+                        <td>Use for page headers or section headers.</td>
+                        <td><code>&lt;header&gt;&lt;/header&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;nav&gt;</td>
+                        <td>Groups navigation links to other pages or sections.</td>
+                        <td>Use for site menus and navigation blocks.</td>
+                        <td><code>&lt;nav&gt;&lt;/nav&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;main&gt;</td>
+                        <td>Represents the main content of the document.</td>
+                        <td>Use once per page for primary content.</td>
+                        <td><code>&lt;main&gt;&lt;/main&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;section&gt;</td>
+                        <td>Defines a thematic section of content.</td>
+                        <td>Use to group related content in a page.</td>
+                        <td><code>&lt;section&gt;&lt;/section&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;article&gt;</td>
+                        <td>Represents a self-contained composition like an article or post.</td>
+                        <td>Use for blog posts, news items, or independent content blocks.</td>
+                        <td><code>&lt;article&gt;&lt;/article&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;aside&gt;</td>
+                        <td>Contains content related to the main content, such as a sidebar.</td>
+                        <td>Use for side notes, ads, or related links.</td>
+                        <td><code>&lt;aside&gt;&lt;/aside&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;footer&gt;</td>
+                        <td>Defines footer content for a section or page.</td>
+                        <td>Use for copyright, links, and contact information.</td>
+                        <td><code>&lt;footer&gt;&lt;/footer&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;h1&gt;</td>
+                        <td>Top-level heading for a page or section.</td>
+                        <td>Use for the most important title on the page.</td>
+                        <td><code>&lt;h1&gt;&lt;/h1&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;h2&gt;</td>
+                        <td>Second-level heading in document structure.</td>
+                        <td>Use for major sections under &lt;h1&gt;.</td>
+                        <td><code>&lt;h2&gt;&lt;/h2&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;h3&gt;</td>
+                        <td>Third-level heading.</td>
+                        <td>Use for subsections under &lt;h2&gt;.</td>
+                        <td><code>&lt;h3&gt;&lt;/h3&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;h4&gt;</td>
+                        <td>Fourth-level heading.</td>
+                        <td>Use for smaller subsections in a hierarchy.</td>
+                        <td><code>&lt;h4&gt;&lt;/h4&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;h5&gt;</td>
+                        <td>Fifth-level heading.</td>
+                        <td>Use for lower-level section titles.</td>
+                        <td><code>&lt;h5&gt;&lt;/h5&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;h6&gt;</td>
+                        <td>Smallest heading level.</td>
+                        <td>Use for minor section headings.</td>
+                        <td><code>&lt;h6&gt;&lt;/h6&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;p&gt;</td>
+                        <td>Defines a paragraph of text.</td>
+                        <td>Use for blocks of written content.</td>
+                        <td><code>&lt;p&gt;&lt;/p&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;a&gt;</td>
+                        <td>Creates a hyperlink to another page or location.</td>
+                        <td>Use for links to external pages, anchors, or resources.</td>
+                        <td><code>&lt;a&gt;&lt;/a&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;img&gt;</td>
+                        <td>Embeds an image in the page.</td>
+                        <td>Use for pictures, icons, and other visual content.</td>
+                        <td><code>&lt;img&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;figure&gt;</td>
+                        <td>Groups media and its caption together.</td>
+                        <td>Use around images, charts, or illustrations with captions.</td>
+                        <td><code>&lt;figure&gt;&lt;/figure&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;caption&gt;</td>
+                        <td>Provides a caption for a &lt;figure&gt;.</td>
+                        <td>Use inside &lt;figure&gt; to describe the media.</td>
+                        <td><code>&lt;caption&gt;&lt;/caption&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;ul&gt;</td>
+                        <td>Creates an unordered list of items.</td>
+                        <td>Use for lists where order is not important.</td>
+                        <td><code>&lt;ul&gt;&lt;/ul&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;ol&gt;</td>
+                        <td>Creates an ordered list of items.</td>
+                        <td>Use when item order or sequence matters.</td>
+                        <td><code>&lt;ol&gt;&lt;/ol&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;li&gt;</td>
+                        <td>Represents a list item.</td>
+                        <td>Use inside &lt;ul&gt;, &lt;ol&gt;, or &lt;menu&gt; elements.</td>
+                        <td><code>&lt;li&gt;&lt;/li&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;dl&gt;</td>
+                        <td>Defines a description list of terms and definitions.</td>
+                        <td>Use when pairing terms with descriptions.</td>
+                        <td><code>&lt;dl&gt;&lt;/dl&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;dt&gt;</td>
+                        <td>Defines a term/name in a description list.</td>
+                        <td>Use inside &lt;dl&gt; before a definition.</td>
+                        <td><code>&lt;dt&gt;&lt;/dt&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;dd&gt;</td>
+                        <td>Defines the description of a term.</td>
+                        <td>Use inside &lt;dl&gt; after a &lt;dt&gt;.</td>
+                        <td><code>&lt;dd&gt;&lt;/dd&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;table&gt;</td>
+                        <td>Creates a table for tabular data.</td>
+                        <td>Use to display rows and columns of structured data.</td>
+                        <td><code>&lt;table&gt;&lt;/table&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;tr&gt;</td>
+                        <td>Defines a row in a table.</td>
+                        <td>Use inside &lt;table&gt; to group table cells.</td>
+                        <td><code>&lt;tr&gt;&lt;/tr&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;th&gt;</td>
+                        <td>Defines a header cell in a table.</td>
+                        <td>Use inside a table row for column or row headings.</td>
+                        <td><code>&lt;th&gt;&lt;/th&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;td&gt;</td>
+                        <td>Defines a standard cell in a table row.</td>
+                        <td>Use inside &lt;tr&gt; for table data.</td>
+                        <td><code>&lt;td&gt;&lt;/td&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;thead&gt;</td>
+                        <td>Groups table header rows.</td>
+                        <td>Use to wrap heading rows in a table.</td>
+                        <td><code>&lt;thead&gt;&lt;/thead&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;tbody&gt;</td>
+                        <td>Groups the main table rows.</td>
+                        <td>Use to wrap the body rows in a table.</td>
+                        <td><code>&lt;tbody&gt;&lt;/tbody&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;tfoot&gt;</td>
+                        <td>Groups footer rows in a table.</td>
+                        <td>Use to wrap summary or total rows in a table.</td>
+                        <td><code>&lt;tfoot&gt;&lt;/tfoot&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;form&gt;</td>
+                        <td>Container for form controls and user input.</td>
+                        <td>Use to collect and submit data from users.</td>
+                        <td><code>&lt;form&gt;&lt;/form&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;input&gt;</td>
+                        <td>Defines an input control for text, choices, or buttons.</td>
+                        <td>Use inside a form to collect user data.</td>
+                        <td><code>&lt;input&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;label&gt;</td>
+                        <td>Defines a caption for a form control.</td>
+                        <td>Use to label inputs and improve accessibility.</td>
+                        <td><code>&lt;label&gt;&lt;/label&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;button&gt;</td>
+                        <td>Defines a clickable button.</td>
+                        <td>Use to submit forms or trigger actions.</td>
+                        <td><code>&lt;button&gt;&lt;/button&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;select&gt;</td>
+                        <td>Creates a dropdown list.</td>
+                        <td>Use when users choose one option from a list.</td>
+                        <td><code>&lt;select&gt;&lt;/select&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;option&gt;</td>
+                        <td>Defines an option inside &lt;select&gt;.</td>
+                        <td>Use to provide choices in a dropdown menu.</td>
+                        <td><code>&lt;option&gt;&lt;/option&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;textarea&gt;</td>
+                        <td>Defines a multi-line text input area.</td>
+                        <td>Use when users need to enter long text.</td>
+                        <td><code>&lt;textarea&gt;&lt;/textarea&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;fieldset&gt;</td>
+                        <td>Groups related form controls together.</td>
+                        <td>Use to organize fields in larger forms.</td>
+                        <td><code>&lt;fieldset&gt;&lt;/fieldset&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;legend&gt;</td>
+                        <td>Provides a caption for a fieldset.</td>
+                        <td>Use inside &lt;fieldset&gt; to label grouped controls.</td>
+                        <td><code>&lt;legend&gt;&lt;/legend&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;datalist&gt;</td>
+                        <td>Contains a list of predefined suggestions.</td>
+                        <td>Use with &lt;input&gt; for autocomplete options.</td>
+                        <td><code>&lt;datalist&gt;&lt;/datalist&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;output&gt;</td>
+                        <td>Displays the result of a calculation or user action.</td>
+                        <td>Use in forms or scripts to show output values.</td>
+                        <td><code>&lt;output&gt;&lt;/output&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;div&gt;</td>
+                        <td>Generic block container for grouping content.</td>
+                        <td>Use for layout and styling when no semantic tag fits.</td>
+                        <td><code>&lt;div&gt;&lt;/div&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;span&gt;</td>
+                        <td>Generic inline container for text or elements.</td>
+                        <td>Use for styling parts of text without changing layout.</td>
+                        <td><code>&lt;span&gt;&lt;/span&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;strong&gt;</td>
+                        <td>Indicates strong importance, typically rendered bold.</td>
+                        <td>Use to emphasize important text semantically.</td>
+                        <td><code>&lt;strong&gt;&lt;/strong&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;em&gt;</td>
+                        <td>Indicates emphasis, usually rendered italic.</td>
+                        <td>Use to emphasize a word or phrase in text.</td>
+                        <td><code>&lt;em&gt;&lt;/em&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;mark&gt;</td>
+                        <td>Highlights text for reference or emphasis.</td>
+                        <td>Use to mark important terms or search results.</td>
+                        <td><code>&lt;mark&gt;&lt;/mark&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;small&gt;</td>
+                        <td>Represents fine print or less important text.</td>
+                        <td>Use for disclaimers, legal text, or captions.</td>
+                        <td><code>&lt;small&gt;&lt;/small&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;sup&gt;</td>
+                        <td>Displays text as superscript.</td>
+                        <td>Use for exponents, footnotes, or trademarks.</td>
+                        <td><code>&lt;sup&gt;&lt;/sup&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;sub&gt;</td>
+                        <td>Displays text as subscript.</td>
+                        <td>Use for chemical formulas or mathematical indices.</td>
+                        <td><code>&lt;sub&gt;&lt;/sub&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;code&gt;</td>
+                        <td>Represents inline code or code fragments.</td>
+                        <td>Use for programming examples or command text.</td>
+                        <td><code>&lt;code&gt;&lt;/code&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;pre&gt;</td>
+                        <td>Displays preformatted text with whitespace preserved.</td>
+                        <td>Use for code blocks, ASCII art, or formatted text.</td>
+                        <td><code>&lt;pre&gt;&lt;/pre&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;blockquote&gt;</td>
+                        <td>Represents a longer quotation from another source.</td>
+                        <td>Use for extended quoted passages.</td>
+                        <td><code>&lt;blockquote&gt;&lt;/blockquote&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;q&gt;</td>
+                        <td>Represents a short inline quotation.</td>
+                        <td>Use for short quotes within text.</td>
+                        <td><code>&lt;q&gt;&lt;/q&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;abbr&gt;</td>
+                        <td>Marks an abbreviation or acronym.</td>
+                        <td>Use with a title attribute to explain shortened text.</td>
+                        <td><code>&lt;abbr&gt;&lt;/abbr&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;address&gt;</td>
+                        <td>Contains contact information for an author or organization.</td>
+                        <td>Use for addresses, phone numbers, and contact details.</td>
+                        <td><code>&lt;address&gt;&lt;/address&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;time&gt;</td>
+                        <td>Represents a date or time value.</td>
+                        <td>Use for timestamps, event dates, or deadlines.</td>
+                        <td><code>&lt;time&gt;&lt;/time&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;audio&gt;</td>
+                        <td>Embeds audio content with controls.</td>
+                        <td>Use for music, sound clips, and spoken content.</td>
+                        <td><code>&lt;audio&gt;&lt;/audio&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;video&gt;</td>
+                        <td>Embeds video content with controls.</td>
+                        <td>Use for movies, demos, and video clips.</td>
+                        <td><code>&lt;video&gt;&lt;/video&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;source&gt;</td>
+                        <td>Defines a media source for audio or video elements.</td>
+                        <td>Use inside &lt;audio&gt; or &lt;video&gt; to provide file sources.</td>
+                        <td><code>&lt;source&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;iframe&gt;</td>
+                        <td>Embeds another webpage inside the current page.</td>
+                        <td>Use to display external content like maps or widgets.</td>
+                        <td><code>&lt;iframe&gt;&lt;/iframe&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;canvas&gt;</td>
+                        <td>Defines a drawable region for graphics via scripting.</td>
+                        <td>Use for dynamic drawings, games, or visualizations.</td>
+                        <td><code>&lt;canvas&gt;&lt;/canvas&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;svg&gt;</td>
+                        <td>Defines scalable vector graphics.</td>
+                        <td>Use for icons, illustrations, and graphics that scale cleanly.</td>
+                        <td><code>&lt;svg&gt;&lt;/svg&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;details&gt;</td>
+                        <td>Creates a collapsible disclosure widget.</td>
+                        <td>Use for optional content that users can show or hide.</td>
+                        <td><code>&lt;details&gt;&lt;/details&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;summary&gt;</td>
+                        <td>Provides a caption for a &lt;details&gt; element.</td>
+                        <td>Use inside &lt;details&gt; to label the toggle.</td>
+                        <td><code>&lt;summary&gt;&lt;/summary&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;progress&gt;</td>
+                        <td>Represents task progress in a progress bar.</td>
+                        <td>Use to show how much of a task is complete.</td>
+                        <td><code>&lt;progress&gt;&lt;/progress&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;meter&gt;</td>
+                        <td>Represents a scalar measurement within a range.</td>
+                        <td>Use for values like battery level or temperature.</td>
+                        <td><code>&lt;meter&gt;&lt;/meter&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;script&gt;</td>
+                        <td>Embeds or links JavaScript code.</td>
+                        <td>Use to add interactivity and dynamic behavior.</td>
+                        <td><code>&lt;script&gt;&lt;/script&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;noscript&gt;</td>
+                        <td>Provides fallback content if scripts are disabled.</td>
+                        <td>Use when you want alternate content for no-JS users.</td>
+                        <td><code>&lt;noscript&gt;&lt;/noscript&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;br&gt;</td>
+                        <td>Inserts a line break in text.</td>
+                        <td>Use within text to force a new line.</td>
+                        <td><code>&lt;br&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;hr&gt;</td>
+                        <td>Creates a thematic break between content.</td>
+                        <td>Use to separate sections or topics visually.</td>
+                        <td><code>&lt;hr&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;b&gt;</td>
+                        <td>Displays text in bold without added emphasis.</td>
+                        <td>Use for keywords or labels when no emphasis is intended.</td>
+                        <td><code>&lt;b&gt;&lt;/b&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;i&gt;</td>
+                        <td>Displays text in italics without emphasis.</td>
+                        <td>Use for terms, foreign words, or stylistic text.</td>
+                        <td><code>&lt;i&gt;&lt;/i&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;u&gt;</td>
+                        <td>Underlines text for presentation.</td>
+                        <td>Use for link-like styling or special emphasis.</td>
+                        <td><code>&lt;u&gt;&lt;/u&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;del&gt;</td>
+                        <td>Shows deleted or removed text.</td>
+                        <td>Use to mark text that is no longer current.</td>
+                        <td><code>&lt;del&gt;&lt;/del&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;ins&gt;</td>
+                        <td>Shows inserted or added text.</td>
+                        <td>Use to mark new or updated content.</td>
+                        <td><code>&lt;ins&gt;&lt;/ins&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;kbd&gt;</td>
+                        <td>Represents user keyboard input.</td>
+                        <td>Use for shortcut keys or key labels.</td>
+                        <td><code>&lt;kbd&gt;&lt;/kbd&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;samp&gt;</td>
+                        <td>Represents sample output from a program.</td>
+                        <td>Use for example computer output or results.</td>
+                        <td><code>&lt;samp&gt;&lt;/samp&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;var&gt;</td>
+                        <td>Represents a variable or placeholder name.</td>
+                        <td>Use for code variables or values in text.</td>
+                        <td><code>&lt;var&gt;&lt;/var&gt;</code></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>Assignment</p>
+    </footer>
+</body>
+
+</html>
