@@ -1,93 +1,146 @@
-body {
+* {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #eef2ff, #f8fafc);
-    color: #1f2937;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.form-container {
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2rem;
+    padding: 2rem 1rem;
 }
 
-.form-card {
-    width: 100%;
-    max-width: 440px;
-    background: #ffffff;
-    border-radius: 18px;
-    box-shadow: 0 18px 50px rgba(15, 23, 42, 0.12);
+
+.container {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     padding: 2rem;
-    border: 1px solid rgba(148, 163, 184, 0.18);
+    max-width: 500px;
+    width: 100%;
+}
+
+h1 {
+    color: #0052cc;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
 }
 
 label {
     display: block;
     margin-bottom: 0.5rem;
-    font-weight: 600;
-    color: #334155;
+    font-weight: bold;
+    color: #333;
+    font-size: 1rem;
 }
 
 input[type="text"],
-input[type="password"],
 input[type="email"],
 input[type="date"],
-input[type="number"],
-input[type="range"] {
+input[type="tel"],
+textarea {
     width: 100%;
-    padding: 0.95rem 1rem;
-    margin-bottom: 1rem;
-    border: 1px solid #cbd5e1;
-    border-radius: 12px;
-    background: #f8fafc;
-    color: #0f172a;
-    font-size: 0.98rem;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: #fff;
+    color: #333;
+    font-size: 1rem;
+    font-family: Arial, sans-serif;
 }
 
-input[type="range"] {
-    padding: 0;
-    height: 2.25rem;
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+input[type="tel"]:focus,
+textarea:focus {
+    outline: none;
+    border-color: #0052cc;
+    background: #fafbfc;
 }
 
-fieldset {
-    border: 1px solid #cbd5e1;
-    border-radius: 14px;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    background: #f8fafc;
+textarea {
+    resize: vertical;
+    min-height: 100px;
 }
 
-fieldset label {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    margin-right: 1rem;
-    margin-bottom: 0.5rem;
-    font-weight: 500;
-}
-
-.button-row {
+.radio-group {
     display: flex;
-    gap: 0.75rem;
-    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 0.5rem;
 }
 
-button,
-input[type="textarea"],
-input[type="button"] {
+.radio-group label {
+    display: inline;
+    margin: 0;
+    font-weight: normal;
+}
+
+input[type="radio"] {
     cursor: pointer;
-    border: none;
-    padding: 0.95rem 1.4rem;
-    border-radius: 12px;
-    font-weight: 700;
-    letter-spacing: 0.01em;
-    transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+    margin-right: 0.5rem;
+    accent-color: #0052cc;
 }
 
+.button-group {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
 
-button[type="submit"]:hover {
-    transform: translateY(-1px);
-    background: #1d4ed8;
+button {
+    flex: 1;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.btn-submit {
+    background-color: #0052cc;
+    color: white;
+}
+
+.btn-submit:hover {
+    background-color: #0043a3;
+}
+
+.btn-reset {
+    background-color: #e0e0e0;
+    color: #333;
+}
+
+.btn-reset:hover {
+    background-color: #d0d0d0;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 1.5rem;
+    }
+
+    h1 {
+        font-size: 1.3rem;
+    }
+
+    .radio-group {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+}
 }
