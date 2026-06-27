@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #eef2ff, #f8fafc);
+    color: #1f2937;
+}
+
+.form-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.form-card {
+    width: 100%;
+    max-width: 440px;
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 18px 50px rgba(15, 23, 42, 0.12);
+    padding: 2rem;
+    border: 1px solid rgba(148, 163, 184, 0.18);
+}
+
+.form-card h1 {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    font-size: 1.75rem;
+    letter-spacing: -0.03em;
+}
+
+label,
+legend {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #334155;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="date"],
+input[type="number"],
+input[type="range"] {
+    width: 100%;
+    padding: 0.95rem 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 12px;
+    background: #f8fafc;
+    color: #0f172a;
+    font-size: 0.98rem;
+}
+
+input[type="range"] {
+    padding: 0;
+    height: 2.25rem;
+}
+
+fieldset {
+    border: 1px solid #cbd5e1;
+    border-radius: 14px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background: #f8fafc;
+}
+
+fieldset label {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.button-row {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
+button,
+input[type="button"],
+input[type="reset"] {
+    cursor: pointer;
+    border: none;
+    padding: 0.95rem 1.4rem;
+    border-radius: 12px;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+}
+
+button[type="submit"] {
+    background: #2563eb;
+    color: #ffffff;
+    box-shadow: 0 12px 28px rgba(37, 99, 235, 0.22);
+    flex: 1;
+}
+
+button[type="submit"]:hover {
+    transform: translateY(-1px);
+    background: #1d4ed8;
+}
+
+.reset-button {
+    background: #e2e8f0;
+    color: #334155;
+    flex: 1;
+}
+
+.reset-button:hover {
+    background: #cbd5e1;
+}
+
+@media (max-width: 520px) {
+    .form-card {
+        padding: 1.5rem;
+    }
+
+    .button-row {
+        flex-direction: column;
+    }
+}
