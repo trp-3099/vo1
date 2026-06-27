@@ -5,7 +5,7 @@ body {
     color: #1f2937;
 }
 
-.form-page {
+.form-container {
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -23,15 +23,7 @@ body {
     border: 1px solid rgba(148, 163, 184, 0.18);
 }
 
-.form-card h1 {
-    margin-top: 0;
-    margin-bottom: 1.5rem;
-    font-size: 1.75rem;
-    letter-spacing: -0.03em;
-}
-
-label,
-legend {
+label {
     display: block;
     margin-bottom: 0.5rem;
     font-weight: 600;
@@ -83,8 +75,8 @@ fieldset label {
 }
 
 button,
-input[type="button"],
-input[type="reset"] {
+input[type="textarea"],
+input[type="button"] {
     cursor: pointer;
     border: none;
     padding: 0.95rem 1.4rem;
@@ -94,34 +86,8 @@ input[type="reset"] {
     transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
 }
 
-button[type="submit"] {
-    background: #2563eb;
-    color: #ffffff;
-    box-shadow: 0 12px 28px rgba(37, 99, 235, 0.22);
-    flex: 1;
-}
 
 button[type="submit"]:hover {
     transform: translateY(-1px);
     background: #1d4ed8;
-}
-
-.reset-button {
-    background: #e2e8f0;
-    color: #334155;
-    flex: 1;
-}
-
-.reset-button:hover {
-    background: #cbd5e1;
-}
-
-@media (max-width: 520px) {
-    .form-card {
-        padding: 1.5rem;
-    }
-
-    .button-row {
-        flex-direction: column;
-    }
 }
