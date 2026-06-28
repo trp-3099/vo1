@@ -33,6 +33,28 @@ p {
     color: #555;
 }
 
+.card img {
+    height: 220px;
+    object-fit: cover;
+}
+
+.card {
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .2);
+}
+
+.card ul {
+    padding-left: 20px;
+}
+
+.card ul li {
+    margin-bottom: 6px;
+}
+
 footer {
     margin-top: 20px;
 }
