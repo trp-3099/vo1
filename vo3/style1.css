@@ -44,7 +44,7 @@ p {
 
 .card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 25px rgba(71, 65, 65, 0.2);
 }
 
 .card ul {
@@ -52,7 +52,7 @@ p {
 }
 
 .card ul li {
-    margin-bottom: 6px;
+    margin-bottom: 7px;
 }
 
 footer {
