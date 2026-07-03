@@ -58,3 +58,25 @@ p {
 footer {
     margin-top: 20px;
 }
+
+.planet-table caption {
+    caption-side: top;
+    font-size: 1rem;
+    color: #6c757d;
+    padding-bottom: 0.75rem;
+}
+
+.planet-table th,
+.planet-table td {
+    vertical-align: middle;
+}
+
+.planet-table tbody tr:hover {
+    background-color: rgba(13, 110, 253, 0.08);
+}
+
+@media (max-width: 576px) {
+    .planet-table caption {
+        font-size: 0.95rem;
+    }
+}

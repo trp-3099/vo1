@@ -506,54 +506,57 @@
         </section>
         <section class="container py-5">
 
-            <h2 class="text-center mb-4">
-                Planet Comparison in highlighted table
-            </h2>
+            <h2 class="text-center mb-4">Planet Comparison</h2>
+            <p class="text-center text-muted mb-4">
+                Compare key solar system planets by orbit, moons, temperature, and type.
+            </p>
 
-            <table class="table table-hover table-bordered text-center">
-
-                <thead class="table-dark">
-                    <tr>
-                        <th>Planet</th>
-                        <th>Distance from Sun</th>
-                        <th>Moons</th>
-                        <th>Average Temperature</th>
-                    </tr>
-                </thead>
-
-                <tbody>
-
-                    <tr>
-                        <td>Mercury</td>
-                        <td>58 Million km</td>
-                        <td>0</td>
-                        <td>167°C</td>
-                    </tr>
-
-                    <tr>
-                        <td>Venus</td>
-                        <td>108 Million km</td>
-                        <td>0</td>
-                        <td>464°C</td>
-                    </tr>
-
-                    <tr>
-                        <td>Earth</td>
-                        <td>150 Million km</td>
-                        <td>1</td>
-                        <td>15°C</td>
-                    </tr>
-
-                    <tr>
-                        <td>Mars</td>
-                        <td>228 Million km</td>
-                        <td>2</td>
-                        <td>-65°C</td>
-                    </tr>
-
-                </tbody>
-
-            </table>
+            <div class="table-responsive">
+                <table class="table table-hover table-bordered align-middle text-center planet-table">
+                    <caption class="text-start fw-semibold">
+                        Inner solar system planets compared side by side.
+                    </caption>
+                    <thead class="table-dark">
+                        <tr>
+                            <th scope="col">Planet</th>
+                            <th scope="col">Distance from Sun</th>
+                            <th scope="col">Moons</th>
+                            <th scope="col">Avg Temp</th>
+                            <th scope="col">Type</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table-primary">
+                            <td>Mercury</td>
+                            <td>58&nbsp;M km</td>
+                            <td>0</td>
+                            <td>167°C</td>
+                            <td>Rocky</td>
+                        </tr>
+                        <tr class="table-warning">
+                            <td>Venus</td>
+                            <td>108&nbsp;M km</td>
+                            <td>0</td>
+                            <td>464°C</td>
+                            <td>Rocky</td>
+                        </tr>
+                        <tr class="table-success">
+                            <td>Earth</td>
+                            <td>150&nbsp;M km</td>
+                            <td>1</td>
+                            <td>15°C</td>
+                            <td>Habitable</td>
+                        </tr>
+                        <tr class="table-info">
+                            <td>Mars</td>
+                            <td>228&nbsp;M km</td>
+                            <td>2</td>
+                            <td>-65°C</td>
+                            <td>Rocky</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
         </section>
     </section>
