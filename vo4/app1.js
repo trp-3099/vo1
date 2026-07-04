@@ -168,4 +168,10 @@ let customer = {
     salary: 7500.0
 }
 
+{
+    let name: string = "10";
+
+
+}
+
 console.log(customer);
