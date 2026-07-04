@@ -74,3 +74,7 @@ console.log(document);
 console.log(document.body);
 console.log(HTMLHeadingElement);
 console.log(heading);
+
+function heading1() {
+    console.log("clicked");
+}
