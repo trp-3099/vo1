@@ -169,7 +169,7 @@ let customer = {
 }
 
 {
-    let name: string = "10";
+    let name = "10";
 
 
 }
