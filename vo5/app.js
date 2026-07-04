@@ -73,3 +73,4 @@ console.log(customer2.father.name);
 console.log(document);
 console.log(document.body);
 console.log(HTMLHeadingElement);
+console.log(heading);
