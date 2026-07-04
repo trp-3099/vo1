@@ -24,57 +24,51 @@ console.log("Hii");
 
 // ---------------------------------------------
 
-let customer2 = {
-    name: "John",
-    age: 25,
-    address: "New York",
-    salary: 50000,
-    items: [
-        {
-            id: 1,
-            name: "item1",
-            price: 100,
-            variants: [
-                {
-                    id: 1,
-                    name: "variant1",
-                    price: 10
-                },
-                {
-                    id: 2,
-                    name: "variant2",
-                    price: 20
+// document.write("<h2>Hello, World! 02</h2>");
 
-                }
-            ]
-        }, {
-            id: 2,
-            name: "item2",
-            price: 200
-        }, {
-            id: 3,
-            name: "item3",
-            price: 300
-        }
-    ],
-    father: {
-        name: "Doe",
-        age: 50,
-        address: "New York"
-    }
-};
-console.log(customer2.name);
-console.log(customer2.age);
-console.log(customer2.address);
-console.log(customer2.salary);
-console.log(customer2.items[2].name);
-console.log(customer2.father.name);
+console.log(document.title);
+// console.log(document.title);
 
-console.log(document);
-console.log(document.body);
-console.log(HTMLHeadingElement);
-console.log(heading);
 
-function heading1() {
-    console.log("clicked");
+let heading = document.getElementById("heading");
+// let heading = document.getElementById("heading");
+
+// heading.innerText = "Sharada";
+// // heading.innerText = "Sharada";
+
+// console.log(heading.);
+let number = 0;
+function increaseValue() {
+    heading.innerText = "Sharada" + (++number);
+    console.log("Clicked");
+    // // console.log(heading.);
+    // let number = 0;
+    // function increaseValue() {
+    //     heading.innerText = "Sharada"+(++number);
+    //     console.log("Clicked");
+
+}
+// }
+
+function decreaseValue() {
+    heading.innerText = "Sharada" + (--number);
+}
+// function decreaseValue() {
+//     heading.innerText = "Sharada"+(--number);
+// }
+
+
+function changeHeading() {
+
+    let txtInput = document.getElementById("inputText");
+
+    let userInput = txtInput.value;
+
+    console.log(userInput);
+
+    let heading = document.getElementById("heading");
+
+    heading.innerText = userInput;
+
+
 }
