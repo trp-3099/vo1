@@ -69,3 +69,7 @@ console.log(customer2.address);
 console.log(customer2.salary);
 console.log(customer2.items[2].name);
 console.log(customer2.father.name);
+
+console.log(document);
+console.log(document.body);
+console.log(HTMLHeadingElement);
