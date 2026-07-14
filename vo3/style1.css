@@ -42,6 +42,10 @@ p {
     transition: .5s
 }
 
+.a {
+    color: #acacac;
+}
+
 .card:hover {
     transform: translateY(-8px);
     box-shadow: 0 10px 25px rgba(71, 65, 65, 0.2);
