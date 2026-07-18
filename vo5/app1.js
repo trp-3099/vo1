@@ -1,5 +1,9 @@
-let secretNumber = 5;
+let secretNumber = randomNumber();
 let attempts = 0;
+
+function randomNumber() {
+    return Math.floor(Math.random() * 10) + 1;
+}
 
 function Check() {
     let input = document.getElementById("Number");
@@ -15,14 +19,14 @@ function Check() {
 
     if (guess === secretNumber) {
         message.innerText = "Correct! You guessed the right number.";
-        input.value = "";
+        input.value = guess;
         attempts = 0;
-        secretNumber = 5;
+        secretNumber = randomNumber();
     } else if (attempts >= 2) {
         message.innerText = `Out of attempts! The correct number was ${secretNumber}.`;
-        input.value = "";
+        input.value = guess;
         attempts = 0;
-        secretNumber = 5;
+        secretNumber = randomNumber();
     } else if (guess > secretNumber) {
         message.innerText = "Too high! Try a lower number.";
     } else {
@@ -31,7 +35,7 @@ function Check() {
 }
 
 function Reset() {
-    secretNumber = 5;
+    secretNumber = randomNumber();
     attempts = 0;
 
     let input = document.getElementById("Number");
