@@ -22,6 +22,14 @@ function Check() {
         input.value = guess;
         attempts = 0;
         secretNumber = randomNumber();
+        Swal.fire({
+            title: "WIN!",
+            text: "Congratulations! You won the game.",
+            imageUrl: "https://media.giphy.com/media/111ebonMs90YLu/giphy.gif",
+            imageWidth: 400,
+            imageHeight: 200,
+            imageAlt: "Custom image"
+        });
     } else if (attempts >= 2) {
         message.innerText = `Out of attempts! The correct number was ${secretNumber}.`;
         input.value = guess;
