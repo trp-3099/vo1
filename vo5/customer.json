@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "saman",
+        "address": "walana",
+        "salary": 75000
+    },
+    {
+        "id": 2,
+        "name": "kelum",
+        "address": "kekirawa",
+        "salary": 95000
+    },
+    {
+        "id": 3,
+        "name": "sunimal",
+        "address": "gampaha",
+        "salary": 85000
+    },
+    {
+        "id": 4,
+        "name": "ranil",
+        "address": "matara",
+        "salary": 65000
+    },
+    {
+        "id": 5,
+        "name": "kamal",
+        "address": "anuradhapura",
+        "salary": 175000
+    },
+    {
+        "id": 6,
+        "name": "wimal",
+        "address": "panadura",
+        "salary": 85000
+    }
+]
