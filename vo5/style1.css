@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f5f7ff, #dfe9ff);
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="button"] {
+    padding: 10px 16px;
+    margin: 6px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s ease;
+}
+
+input[type="button"][value="Submit"] {
+    background-color: #4f6df5;
+    color: white;
+}
+
+input[type="button"][value="Reset"] {
+    background-color: #e74c3c;
+    color: white;
+}
+
+#message {
+    margin-top: 14px;
+    font-weight: bold;
+    color: #34495e;
+}
