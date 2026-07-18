@@ -25,7 +25,7 @@ function Check() {
         Swal.fire({
             title: "WIN!",
             text: "Congratulations! You won the game.",
-            imageUrl: "https://media.giphy.com/media/111ebonMs90YLu/giphy.gif",
+            imageUrl: "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExdnlwc3ZydTVqbm15OHFsMW0zNzMwMjNxMXAwNnprNzBhYTB6a282YyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/KXOKGDNL5dxik2LrpM/giphy.gif",
             imageWidth: 400,
             imageHeight: 200,
             imageAlt: "Custom image"
