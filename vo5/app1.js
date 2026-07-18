@@ -19,26 +19,41 @@ function Check() {
 
     if (guess === secretNumber) {
         message.innerText = "Correct! You guessed the right number.";
-        input.value = guess;
-        attempts = 0;
-        secretNumber = randomNumber();
+        input.value = "";
         Swal.fire({
             title: "WIN!",
             text: "Congratulations! You won the game.",
+            icon: "success",
             imageUrl: "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExdnlwc3ZydTVqbm15OHFsMW0zNzMwMjNxMXAwNnprNzBhYTB6a282YyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/KXOKGDNL5dxik2LrpM/giphy.gif",
             imageWidth: 400,
             imageHeight: 200,
             imageAlt: "Custom image"
         });
+        Reset();
     } else if (attempts >= 2) {
-        message.innerText = `Out of attempts! The correct number was ${secretNumber}.`;
-        input.value = guess;
-        attempts = 0;
-        secretNumber = randomNumber();
+        const correctNumber = secretNumber;
+        message.innerText = `Out of attempts! The correct number was ${correctNumber}.`;
+        input.value = "";
+        Swal.fire({
+            icon: "error",
+            title: "Out of attempts!",
+            text: `The correct number was ${correctNumber}. Try again.`,
+        });
+        Reset();
     } else if (guess > secretNumber) {
         message.innerText = "Too high! Try a lower number.";
+        Swal.fire({
+            icon: "info",
+            title: "Too high!",
+            text: "Try a lower number.",
+        });
     } else {
         message.innerText = "Too low! Try a higher number.";
+        Swal.fire({
+            icon: "info",
+            title: "Too low!",
+            text: "Try a higher number.",
+        });
     }
 }
 
