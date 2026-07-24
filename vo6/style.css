@@ -74,7 +74,6 @@ a:hover {
     color: var(--accent-ink);
 }
 
-/* Visible keyboard focus everywhere — accessibility floor */
 a:focus-visible,
 button:focus-visible,
 [tabindex]:focus-visible {
@@ -83,7 +82,6 @@ button:focus-visible,
     border-radius: 4px;
 }
 
-/* Skip link */
 .skip-link {
     position: absolute;
     left: -999px;
@@ -451,7 +449,6 @@ section {
     margin: 0;
 }
 
-/* Modal styling to match theme */
 .modal-content {
     background: var(--surface);
     color: var(--ink);
@@ -507,7 +504,6 @@ section {
     color: var(--ink-soft);
 }
 
-
 .chip-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
@@ -529,7 +525,6 @@ section {
     background: var(--surface-2);
 }
 
-
 footer {
     background: var(--surface);
     border-top: var(--border);
@@ -541,7 +536,6 @@ footer .mono {
     color: var(--ink-soft);
 }
 
-/* subtle scroll-reveal */
 .reveal {
     opacity: 0;
     transform: translateY(14px);

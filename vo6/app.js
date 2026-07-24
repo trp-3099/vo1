@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
         revealEls.forEach(el => el.classList.add('is-visible'));
     }
 
-    const GITHUB_USERNAME = 'octocat';
+    const GITHUB_USERNAME = 'trp-3099';
 
     async function loadRepos() {
         const statusEl = document.getElementById('repoStatus');
