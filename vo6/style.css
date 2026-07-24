@@ -419,6 +419,9 @@ section {
     gap: .4rem;
     margin-top: auto;
     padding-top: 1.2rem;
+    width: fit-content;
+    max-width: 100%;
+    align-self: flex-start;
 }
 
 .tag {
